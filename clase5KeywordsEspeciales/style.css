@@ -1,0 +1,32 @@
+html {
+    font-size: 62.5%;
+}
+
+.contenedor {
+    border: 5px solid rgb(148, 122, 125);
+    background-color: rgb(218, 206, 188);
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: 1fr 3fr min-content max-content;
+}
+
+.item {
+    border: 5px solid rgb(241, 152, 182);
+    font-size: 2rem;
+}
+
+.contenedor-2 {
+    margin-top: 10px;
+    border: 5px solid rgb(148, 122, 125);
+    background-color: rgb(218, 206, 188);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.contenedor-3 {
+    margin-top: 10px;
+    border: 5px solid rgb(148, 122, 125);
+    background-color: rgb(218, 206, 188);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}

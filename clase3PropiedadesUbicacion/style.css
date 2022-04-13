@@ -1,0 +1,97 @@
+html {
+    font-size: 62.5%;
+}
+
+.contenedor {
+    border: 5px solid black;
+    background-color: wheat;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    grid-template-areas:
+        "header header header"
+        "side main main"
+        "side main main";
+    place-content: center;
+}
+
+.item {
+    font-size: 4rem;
+}
+
+.item:first-child {
+    border: 5px solid green;
+    background-color: greenyellow;
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-area: header;
+}
+
+.item:nth-child(2) {
+    border: 5px solid rgb(76, 76, 253);
+    background-color: rgb(161, 94, 223);
+    /* grid-row: 2 / 4; */
+    grid-area: side;
+}
+
+.item:last-child {
+    border: 5px solid rgb(75, 74, 74);
+    background-color: gray;
+    /*Con lineas grid-area: RowStar / ColumnStar / RowEnd / ColumnEnd; */
+    /* grid-area: 2 / 2 / 4 / 4; */
+    grid-area: main;
+}
+
+.contenedor-reto {
+    margin-top: 10px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-areas: 
+        "one two two"
+        "three three four"
+        "five six seven";
+    height: 500px;
+    border: 5px solid black;
+}
+
+.item-reto-1, .item-reto-4, .item-reto-5 {
+    background-color: #ccee3a;
+}
+
+.item-reto-2, .item-reto-6 {
+    background-color: #71bb05;
+}
+
+.item-reto-3, .item-reto-7 {
+    background-color: #268201;
+}
+
+.item-reto-1 {
+    grid-area: one;
+}
+
+.item-reto-2 {
+    grid-area: two;
+}
+
+.item-reto-3 {
+    grid-area: three;
+}
+
+.item-reto-4 {
+    grid-area: four;
+}
+
+.item-reto-5 {
+    grid-area: five;
+}
+
+.item-reto-6 {
+    grid-area: six;
+}
+
+.item-reto-7 {
+    grid-area: seven;
+}
